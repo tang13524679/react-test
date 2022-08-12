@@ -12,26 +12,8 @@ export default function App2() {
     { name: 'ddd', backgroundColor: 'rgb(209,0,71)' }
   ]
   const changeHeight = (index) => {
-    // setCount(index === count ? undefined : index)
-    // if(count==undefined){
-
-    // }else{
-
-    // }
-
     setCount(index === count ? undefined : index)
-
-
-    // if (index === count) {
-    //   setCount(undefined)
-    //   // fadeOut((callback)=>{
-
-    //   // })
-    // } else {
-    //   setCount(index)
-    //   // fadeIn()
-    // }
-    // fadeIn()
+    
   }
 
   const fadeAnim = useRef(new Animated.Value(0)).current;
