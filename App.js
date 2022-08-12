@@ -52,6 +52,8 @@ export default function App2() {
   };
 
 
+  //我开发了一个新功能
+
 
   const fadeOutBBB = (callback) => {
     Animated.timing(fadeAnim, {
