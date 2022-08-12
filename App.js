@@ -13,19 +13,19 @@ export default function App2() {
   ]
   const changeHeight = (index) => {
     setCount(index === count ? undefined : index)
-    
   }
 
-  const fadeAnim = useRef(new Animated.Value(50)).current;
+  const fadeAnim = useRef(new Animated.Value(100)).current;
 
   const fadeIn = () => {
     Animated.timing(fadeAnim, {
-      toValue: 50,
+      toValue: 100,
       duration: 200,
-      useNativeDriver: true
-
+      useNativeDriver: true,
+      xxx: true
     }).start();
   };
+
   const fadeInCCC = () => {
     Animated.timing(fadeAnim, {
       toValue: 50,
@@ -43,13 +43,15 @@ export default function App2() {
     }).start(callback);
   };
 
-  const fadeOutxxx = (callback) => {
+  const fadeOutXXX = (callback) => {
     Animated.timing(fadeAnim, {
       toValue: 0,
       duration: 200,
       useNativeDriver: true
     }).start(callback);
   };
+
+
 
   const fadeOutBBB = (callback) => {
     Animated.timing(fadeAnim, {
@@ -58,6 +60,7 @@ export default function App2() {
       useNativeDriver: true
     }).start(callback);
   };
+
 
 
 
