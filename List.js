@@ -6,7 +6,7 @@ const List = (props,ref) => {
     const [state, setstate] = useState(false)
 
     const fadeAnim = useRef(new Animated.Value(0)).current;
-
+console.log('1111')
     const animatedClick = () => {
         if (state) {
             fadeOut()
