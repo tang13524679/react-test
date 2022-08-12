@@ -26,7 +26,7 @@ export default function App2() {
     }).start();
   };
 
-  const fadeInCCC = () => {
+  const fadeInccc = () => {
     Animated.timing(fadeAnim, {
       toValue: 50,
       duration: 200,
