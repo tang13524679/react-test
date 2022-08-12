@@ -26,8 +26,32 @@ export default function App2() {
 
     }).start();
   };
+  const fadeInCCC = () => {
+    Animated.timing(fadeAnim, {
+      toValue: 50,
+      duration: 200,
+      useNativeDriver: true
+
+    }).start();
+  };
 
   const fadeOut = (callback) => {
+    Animated.timing(fadeAnim, {
+      toValue: 0,
+      duration: 200,
+      useNativeDriver: true
+    }).start(callback);
+  };
+
+  const fadeOutxxx = (callback) => {
+    Animated.timing(fadeAnim, {
+      toValue: 0,
+      duration: 200,
+      useNativeDriver: true
+    }).start(callback);
+  };
+
+  const fadeOutBBB = (callback) => {
     Animated.timing(fadeAnim, {
       toValue: 0,
       duration: 200,
