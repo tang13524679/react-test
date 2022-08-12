@@ -13,17 +13,16 @@ export default function App2() {
   ]
   const changeHeight = (index) => {
     setCount(index === count ? undefined : index)
-    
   }
 
-  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const fadeAnim = useRef(new Animated.Value(100)).current;
 
   const fadeIn = () => {
     Animated.timing(fadeAnim, {
       toValue: 100,
       duration: 200,
-      useNativeDriver: true
-
+      useNativeDriver: true,
+      xxx: true
     }).start();
   };
 
@@ -42,7 +41,7 @@ export default function App2() {
       {
         list.map((item, index) => {
           return (
-            <List key={index} backgroundColor={item.backgroundColor}></List>
+            <List key={index+'list'} backgroundColor={item.backgroundColor}></List>
           )
         })
       }
