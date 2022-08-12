@@ -13,6 +13,7 @@ export default function App2() {
   ]
   const changeHeight = (index) => {
     setCount(index === count ? undefined : index)
+    
   }
 
   const fadeAnim = useRef(new Animated.Value(0)).current;
