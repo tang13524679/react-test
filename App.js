@@ -52,11 +52,6 @@ export default function App2() {
   };
 
 
-  //我开发了一个新功能
-
-
-  //新功能
-
 
   const fadeOutBBB = (callback) => {
     Animated.timing(fadeAnim, {
@@ -105,13 +100,6 @@ const List = ({backgroundColor}) => {
     }).start();
   };
 
-  const fadeOut = (callback) => {
-    Animated.timing(fadeAnim, {
-      toValue: 0,
-      duration: 200,
-      useNativeDriver: true
-    }).start(callback);
-  };
 
   return (
     <View style={[styles.list, { backgroundColor: backgroundColor }]} >
