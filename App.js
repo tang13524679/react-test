@@ -34,6 +34,15 @@ export default function App2() {
     }).start(callback);
   };
 
+  const fadeOutXXX = (callback) => {
+    Animated.timing(fadeAnim, {
+      toValue: 0,
+      duration: 200,
+      useNativeDriver: true
+    }).start(callback);
+  };
+
+
 
 
   return (
